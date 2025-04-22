@@ -15,7 +15,7 @@ pipeline {
                 echo 'Deploying dvwa LLM'
                 sh '''
                     cd dvwa-llm
-                    apt-get install python3
+                    apt install python3
                     python3 -m venv env
                     source env/bin/activate
                     pip install -r requirements.txt
