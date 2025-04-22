@@ -3,6 +3,12 @@ pipeline {
     agent {label "self"
           }//end of agent
 
+          environment {
+
+          OPEN_AI_KEY =   credentials('OPEN_API_KEY')
+        
+        }
+
     stages {
         stage('Deploy_dvwa-llm') {
             steps {
