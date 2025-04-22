@@ -18,8 +18,8 @@ pipeline {
                     pwd
                     whoami
                     ls -alh
-                    sudo apt-get update
-                    sudo apt install python3
+                    apt-get update
+                    apt install python3
                     python3 --version
                     python3 -m venv env
                     source env/bin/activate
