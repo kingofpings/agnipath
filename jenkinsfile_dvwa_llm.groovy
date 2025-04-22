@@ -16,6 +16,9 @@ pipeline {
                 sh '''
                     cd dvwa-llm
                     python3 --version
+                    pwd
+                    whoami
+                    ls -alh
                     apt install python3
                     python3 -m venv env
                     source env/bin/activate
